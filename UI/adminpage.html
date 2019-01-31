@@ -4,12 +4,13 @@
         <meta charset = "UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
-        <title>Sign up page</title>
+        <title>Admin Page</title>
     </head>
     <body>
         <div>
             <button id="createoffice" class="button-btn orange" onclick="openPage('politicaloffice',this)">Create Political Office</button>
             <button class="button-btn green" onclick="openPage('politicalparty',this)">Create Political Party</button>
+            <button class="button-btn green" onclick="openPage('editpoliticalparty',this)">Edit Political Party</button>
             <button class="button-btn pink" onclick="openPage('deleteparty',this)">Delete Political Party</button>
 
         </div>
@@ -31,16 +32,20 @@
             placeholder="Enter name of political party"
             name="nameofparty"required>
         </form>
-    </form>
+        <section class="container" id="editpoliticalparty"></section>
+        <form>
+            <label for="editparty"><b>Political Party</b></label>
+            <input type="text"
+            placeholder="Edit name of political party"
+            name="editparty"required>
+        </form>
+        
     <section class="container" id="deleteparty"></section>
     <form>
         <label for="deleteprty"><b>Political Party</b></label>
         <input type="text"
         placeholder="Enter name of political party you want to delete"
         name="deleteprty"required>
-
-    </form>
-    <form>
             <label for="idofdeleteprty"><b>ID of Party</b></label>
             <input type="text"
             placeholder="Enter ID of political party you want to delete"
