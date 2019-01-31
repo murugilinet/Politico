@@ -1,0 +1,47 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+        <title>Sign up page</title>
+    </head>
+    <body>
+        <div>
+            <button id="changepswrd" class="button btn-green" onclick="openPage('newpassword',this)">Change Password</button>
+            <button class="button btn-red" onclick="openPage('vote',this)">Cast Vote</button>
+            <button class="button btn-blue" onclick="openPage('seeresults',this)">View Results</button></button>
+                
+        </div>
+        <section class="container" id="newpassword"></section>
+        <div>
+            <label for="oldpswrd"><i>Old Password</i></label>
+            <input
+            type="password"
+            placeholder="Enter old password"
+            name="oldpswrd" required>
+                <label for="newpswrd"><i>New Password</i></label>
+            <input
+            type="password"
+            placeholder="Enter your new password"
+            name="newpswrd" required>
+            <label for="confirmpswrd"><i>New Password</i></label>
+            <input
+            type="password"
+            placeholder="Confirm your new password"
+            name="confirmpswrd" required>  
+        </div>
+        <section class="container" id="vote"></section>
+        <div>
+           <form></form>
+        </div>
+        <section class="container" id="seeresults"></section>
+        <div>
+            <table>
+                <tr>
+                    <th>Winning Candidate</th>
+                    <th>Political office</th>
+                </tr>
+            </table>
+        </div>
+    </body>
