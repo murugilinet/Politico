@@ -1,0 +1,39 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+        <title>Sign up page</title>
+    </head>
+    <body>
+        <button id="candidateinterest" class="button-btn yellow" onclick="openPage('candidateapply',this)"><b>Apply to be a candidate</b></button>
+        <section class="container" id="candidateapply"></section>
+        <div>
+            <form>
+            <p>Please Fill in all the details</p>
+               <label for="names"><b>Full Name</b></label>
+            <input type="text"
+            placeholder="Enter your full name"
+            name="names" required>
+            <label for="position"><b>Apply Position</b></label>
+            <input type="text"
+            placeholder="Enter name of position you want to apply for"
+            name="position" required>
+            <label for="yearsnumber"><b>Age</b></label>
+            <input type="number"
+            placeholder="Enter your age in numbers"
+            name="yearsnumber" required>
+            <div>
+            class="clear">
+           <button 
+        type="button"
+        class="cancelbtn">Cancel</button>
+           <button
+        type="submit"
+        class="applybtn">Apply</button>
+            </div>    
+        </form>
+        </div>
+    </body>
+        </html>
