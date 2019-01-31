@@ -4,12 +4,14 @@
         <meta charset = "UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
-        <title>Sign up page</title>
+        <title>User Page</title>
     </head>
     <body>
         <div>
             <button id="changepswrd" class="button btn-green" onclick="openPage('newpassword',this)">Change Password</button>
             <button class="button btn-red" onclick="openPage('vote',this)">Cast Vote</button>
+            <button class="button btn-red" onclick="openPage('viewparties',this)">Political Party</button>
+            <button class="button btn-red" onclick="openPage('viewcandidate',this)">Political Candidates</button>
             <button class="button btn-blue" onclick="openPage('seeresults',this)">View Results</button></button>
                 
         </div>
@@ -32,6 +34,14 @@
             name="confirmpswrd" required>  
         </div>
         <section class="container" id="vote"></section>
+        <div>
+           <form></form>
+        </div>
+        <section class="container" id="viewparties"></section>
+        <div>
+           <form></form>
+        </div>
+        <section class="container" id="viewcandidate"></section>
         <div>
            <form></form>
         </div>
