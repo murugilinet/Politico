@@ -8,27 +8,26 @@
     <title>Log In page</title>
 </head>
 
-<body class="container">
-    <div class="record_form">
-        <form class="flag_form">
-            <div>
-                <label for="usrname"><b>Username</b></label>
-                <input type="text" placeholder="Username" name="usrname" required>
-            </div>
-            <div>
-                <label for="pswrd"><b>Password</b></label>
-                <input type="password" placeholder="Enter your password" name="pswrd" required>
-            </div>
-            <div>
-                <button type="submit" class="loginbtn">Login</button>
-            </div>
-            <div>
-                <label>
-                    <input type="checkbox" checked="checked" name="rmbr">Remember me
-                </label>
-            </div>
-        </form>
-    </div>
+<body>
+        <header>
+                <nav class="navcontainer">
+                    <a href="#" class="brand">Politico</a>
+                    <ul>
+                        <li><a href="index.html" class="navlink">&nbsp; Home</a></li>
+                        <li><a href="signup.html" class="navlink">&nbsp; Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+    <form>
+        <div class="usersign">
+            <label><b>Username</b></label><br>
+            <input type="text" placeholder="Username" name="usrname" required><br>
+            <label><b>Password</b></label><br>
+            <input type="text" placeholder="password" name="pswrd" required><br>
+            <input type="submit" class="loginbtn" value='Login'><br>
+            <input type="checkbox" checked="checked" name="rmbr">Remember me
+        </div>
+    </form>
 </body>
 
 </html>

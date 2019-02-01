@@ -4,7 +4,7 @@
     
 }
 body {
-    background-color: aqua;
+    background-color: rgb(40, 182, 182);
     font-family: Arial, Helvetica;
     text-align: left;
     height: auto;
@@ -14,11 +14,31 @@ body {
     margin-bottom: 50px;
  
 }
+header{
+    display:flex;
+    background-color: antiquewhite;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    height: 80;
+    align-items: center;
+    box-shadow: 0 0 22px black;
+}
+header *{
+    display: inline;
+}
+header li {
+    margin: 30px
+}
+h1{
+    color: #b914be;
+}
 .button{
     display: inline-block;
     border-radius: 4px;
     border:none;
-    color: #fff;
+    color: rgb(8, 8, 8);
     text-align: center;
     font-size: 15px;
     padding: 20px;
@@ -27,8 +47,50 @@ body {
     cursor: pointer;
     margin: 5px;
 }
+footer{
+    display: flex;
+    background-image: linear-gradient(260deg, #d5ecd5,#3b073b);
+    font-size: 18px;
+    padding: 8px;
+    justify-content: center;
+    color: #121312;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    margin-block-start: 0%;
+}
+
+.brand {
+    color:aqua;
+    display: inline-block;
+    font-size: 22px;
+    margin-top:10px;
+    margin-left: 5px;
+}
+ .navcontainer {
+     font-size: 16px;
+     background-image: linear-gradient(260deg, black 0%,rgb(22, 53, 189) 60%);
+     border: 1px solid grey;
+     padding-bottom: 10px;
+
+}
+@media screen and (min-width:100px) {
+    .navcontainer {
+        display: -webkit-inline-box;
+        justify-content: end;
+        padding-bottom: 1px;
+        height: 70px;
+        width: 100%;
+    }
+    .navlink {
+        margin-left: 5px;
+    }
+    .brand{
+        margin-top: 2px;
+    }
+}
 .container {
-    background-color: whitesmoke;
+    background-color: rgb(221, 218, 220);
     font-size: 14px;
     color: black;
     display: flex;
@@ -38,27 +100,46 @@ body {
     align-content: space-between;
     flex-wrap: wrap;
     height: auto;
-
+    z-index: 1;
+    overflow: auto;
 }
-h1{
-    color: blueviolet;
+.usersign {
+  width: 70%;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid rgb(60, 59, 61);
+  margin-bottom: 30px;
+  margin-left: 15%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;  
 }
 .getin {
-    color:purple
+    color:purple;
+    font-size: 20px;
+    text-align: center;
 }
 .record_form {
-    width: 100;
-    background-color: cornflowerblue
+    width: 80%;
+   background-color: rgb(41, 182, 182);
 }
 .flag_form {
-    color: rgb(8, 5, 5);
+    color: rgb(170, 15, 15);
     
 }
 .signupbtn {
     background-color:red;
+    width: 20%;
+    font-size: 23px;
 }
 .loginbtn {
     background-color: rgb(22, 199, 22);
+    width:20%;
+    font-size: 20px;
 }
 .applybtn {
     background-color: chartreuse;
@@ -83,4 +164,7 @@ h1{
 }
 table,th,td{
     border: 1px solid black;
+    font-family: arial;
+    width: 100%;
 }
+
