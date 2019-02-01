@@ -8,39 +8,34 @@
     <title>Sign up page</title>
 </head>
 
-<body class="container">
-        <div class="record_form">
+<body>
+        <header>
+                <nav class="navcontainer">
+                    <a href="#" class="brand">Politico</a>
+                    <ul>
+                        <li><a href="index.html" class="navlink">&nbsp; Home</a></li>
+                        <li><a href="login.html" class="navlink">&nbsp; Log In</a></li>
+                    </ul>
+                </nav>
+            </header>
             <p class="getin">Fill in to open account</p>
-            <form class="flag_form">
-            <div>
-                <label for="names"><b>FULL NAMES:</b></label>
-                <input type="text" placeholder="Enter Surname,First Name,Last Name" name="names" required>
-            </div>
-            <div>
-                <label for="identity"><b>ID NO:</b></label>
-                <input type="text" placeholder="Must consist of 8 digits" name="identity" required>
-            </div>
-            <div>
-                <label for="email"><b>EMAIL ADDRESS:</b></label>
-                <input type="text" placeholder="eg janedoe@gmail" name="email" required>
-            </div>
-            <div>
-                <label for="usrname"><b>USERNAME:</b></label>
-                <input type="text" placeholder="Username" name="usrname" required>
-            </div>
-            <div>
-                <label for="pswrd"><b>PASSWORD:</b></label>
-                <input type="password" placeholder="Enter a unique password that consist of atleast 8 characters"
-                    name="pswrd" required>
-            </div>
-            <div>
+            <form class="logincontainer">
+            <div class="usersign">
+                <label for="names"><b>FULL NAMES:</b></label><br>
+                <input type="text" placeholder="Surname,Firstname,Lastname" name="names" required><br>
+                <label for="identity"><b>ID NO:</b></label><br>
+                <input type="text" placeholder="Must consist of 8 digits" name="identity" required><br>
+                <label for="email"><b>EMAIL ADDRESS:</b></label><br>
+                <input type="text" placeholder="eg janedoe@gmail" name="email" required><br>
+                <label for="usrname"><b>USERNAME:</b></label><br>
+                <input type="text" placeholder="Username" name="usrname" required><br>
+                <label for="pswrd"><b>PASSWORD:</b></label><br>
+                <input type="password" placeholder="Enter a unique password"
+                    name="pswrd" required><br>
                 <label for="confirm pswrd"><b>CONFIRM PASSWORD:</b>
-                </label>
-                <input type="password" placeholder="confirm password" name="confirm pswrd" required>
-            </div>
-            <div>
+ </label><br>
+                <input type="password" placeholder="confirm password" name="confirm pswrd" required><br>
                 <button type="submit" class="signupbtn">Sign Up</button>
-            </div>
         </div>
     <script src="js/scripts.js"></script>
 </body>
