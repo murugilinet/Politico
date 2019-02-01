@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
-        <title>Sign up page</title>
-    </head>
-    <body>
-    <form>
-        <div
-        class="container">
-        <h1>Sign Up</h1>
-        <p>Fill in to open account</p>
-          <label for="names"><b>FULL NAMES</b></label>
-        <input type="text"
-        placeholder="Enter Surname,First Name,Last Name"
-        name="names"required>
-          <label for="identity"><b>ID NO</b></label>
-        <input type="number"
-        placeholder="Must consist of 8 digits"
-        name="identity"required>
-          <label for="email"><b>EMAIL ADDRESS</b></label>
-        <input type="text"
-        placeholder="eg janedoe@gmail"
-        name="email"required>gmail
-          <label for="usrname"><b>USERNAME</b></label>
-        <input type="text"
-        placeholder="Username"
-        name="usrname"required>
-          <label for="pswrd"><b>PASSWORD</b></label>
-        <input type="password"
-        placeholder="Enter a unique password
-        that consist of atleast 8 characters"
-        name="pswrd"required>
-          <label for="confirm pswrd"><b>CONFIRM PASSWORD</b>
-        </label>
-        <input type="password"
-        placeholder="confirm password"
-        name="confirm pswrd"required>
-          <div
-        class="clear">
-           <button 
-        type="button"
-        class="cancelbtn">Cancel</button>
-           <button
-        type="submit"
-        class="signupbtn">Sign Up</button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <title>Sign up page</title>
+</head>
+
+<body class="container">
+        <div class="record_form">
+            <p class="getin">Fill in to open account</p>
+            <form class="flag_form">
+            <div>
+                <label for="names"><b>FULL NAMES:</b></label>
+                <input type="text" placeholder="Enter Surname,First Name,Last Name" name="names" required>
+            </div>
+            <div>
+                <label for="identity"><b>ID NO:</b></label>
+                <input type="text" placeholder="Must consist of 8 digits" name="identity" required>
+            </div>
+            <div>
+                <label for="email"><b>EMAIL ADDRESS:</b></label>
+                <input type="text" placeholder="eg janedoe@gmail" name="email" required>
+            </div>
+            <div>
+                <label for="usrname"><b>USERNAME:</b></label>
+                <input type="text" placeholder="Username" name="usrname" required>
+            </div>
+            <div>
+                <label for="pswrd"><b>PASSWORD:</b></label>
+                <input type="password" placeholder="Enter a unique password that consist of atleast 8 characters"
+                    name="pswrd" required>
+            </div>
+            <div>
+                <label for="confirm pswrd"><b>CONFIRM PASSWORD:</b>
+                </label>
+                <input type="password" placeholder="confirm password" name="confirm pswrd" required>
+            </div>
+            <div>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
         </div>
-       </div>
-    </form>
-    </body>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>

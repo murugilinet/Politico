@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset = "UTF-8">
@@ -6,51 +6,96 @@
         <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
         <title>Admin Page</title>
     </head>
-    <body>
+    <body onload="openPage('politicaloffice')">
         <div>
-            <button id="createoffice" class="button-btn orange" onclick="openPage('politicaloffice',this)">Create Political Office</button>
-            <button class="button-btn green" onclick="openPage('politicalparty',this)">Create Political Party</button>
-            <button class="button-btn green" onclick="openPage('editpoliticalparty',this)">Edit Political Party</button>
-            <button class="button-btn pink" onclick="openPage('deleteparty',this)">Delete Political Party</button>
+            <button id="createoffice" class="button btn-orange" onclick="openPage('politicaloffice',this)">Create Political Office</button>
+            <button class="button btn-green" onclick="openPage('politicalparty',this)">Create Political Party</button>
+            <button class="button btn-green" onclick="openPage('editpoliticalparty',this)">Edit Political Party</button>
+            <button class="button btn-pink" onclick="openPage('deleteparty',this)">Delete Political Party</button>
 
         </div>
-        <section class="container" id="politicaloffice"></section>
-        <form>
-            <label for="nameofoffice"><b>Political Office</b></label>
+        <section class="container" id="politicaloffice">
+        <div class="record_form">
+            <p class="getin">Fill in details</p>
+        <form class="flag_form">
+            <div>
+            <label for="nameofoffice"><b>Political Office:</b></label>
             <input type="text"
             placeholder="Enter Political Office"
             name="nameofoffice" required>
-            <label for="headofoffice"><b>Head of Office</b></label>
-            <input type="text"
-            placeholder="Enter head of office"
-            name="headofoffice" required>
-        </form>
-        <section class="container" id="politicalparty"></section>
-        <form>
-            <label for="nameofparty"><b>Political Party</b></label>
+        </div>
+        <div>
+            <label for="years"><b>Age Requirement:</b></label>
+            <input type="number"
+            placeholder="Enter age required for office"
+            name="year" required>
+        </div> 
+        <div>
+                <label for="education"><b>Education Level:</b></label>
+                <input type="text"
+                placeholder="Enter education required for office"
+                name="education" required>
+        </div>
+        <div>
+            <button type="submit" class="applybtn">Create</button>
+        </div>
+        
+        </form></div>
+    </section>
+        <section class="container" id="politicalparty">
+            <div class="record_form">
+        <form class="flag_form">
+            <div>
+            <label for="nameofparty"><b>Political Party:</b></label>
             <input type="text"
             placeholder="Enter name of political party"
             name="nameofparty"required>
+        </div>
+        <div>
+            <button type="submit" class="applybtn">Create</button>
+        </div>
         </form>
-        <section class="container" id="editpoliticalparty"></section>
-        <form>
-            <label for="editparty"><b>Political Party</b></label>
+    </div>
+    </section>
+        <section class="container" id="editpoliticalparty">
+            <div class="record_form">
+            <p class="getin">Make Changes</p>
+        <form class="flag_form">
+            <div>
+            <label for="editparty"><b>Political Party:</b></label>
             <input type="text"
             placeholder="Edit name of political party"
             name="editparty"required>
+           </div>  
+           <div>
+               <button type="submit" class="applybtn">Edit</button>
+           </div>
         </form>
+    </div>
+    </section>
         
-    <section class="container" id="deleteparty"></section>
-    <form>
-        <label for="deleteprty"><b>Political Party</b></label>
+    <section class="container" id="deleteparty">
+        <div class="record_form">
+    <form class="flag_form">
+        <div>
+        <label for="deleteprty"><b>Political Party:</b></label>
         <input type="text"
         placeholder="Enter name of political party you want to delete"
         name="deleteprty"required>
-            <label for="idofdeleteprty"><b>ID of Party</b></label>
+    </div>
+    <div>
+            <label for="idofdeleteprty"><b>ID of Party:</b></label>
             <input type="text"
             placeholder="Enter ID of political party you want to delete"
             name="iddeleteprty"required>
+        </div>
+        <div>
+            <button type="submit" class="applybtn">Delete</button>
+        </div>
     
         </form>
+        </div>
+    </section>
+    <script src="js/scripts.js"></script>
     </body>
     </html>
