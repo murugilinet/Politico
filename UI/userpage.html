@@ -12,10 +12,10 @@
 
     <div>
         <button id="changepswrd" class="button btn-green" onclick="openPage('newpassword',this)">Change Password</button>
-        <button class="button btn-red" onclick="openPage('vote',this)">Cast Vote</button>
+        <button class="button btn-green" onclick="openPage('vote',this)">Cast Vote</button>
         <button class="button btn-green" onclick="openPage('viewparties',this)">Political Parties</button>
-        <button class="button btn-red" onclick="openPage('viewcandidate',this)">Political Candidates</button>
-        <button class="button btn-blue" onclick="openPage('seeresults',this)">View Results</button></button>
+        <button class="button btn-green" onclick="openPage('viewcandidate',this)">Political Candidates</button>
+        <button class="button btn-green" onclick="openPage('seeresults',this)">View Results</button></button>
 
     </div>
     <section class="container" id="newpassword">
@@ -73,13 +73,30 @@
         <section class="container" id="viewparties">
             <div class="record_form">
                 <form class="flag_form">
-                   <div>
-                       <h1>Registered political parties</h1>
-                       <p>Party1</p>
-                       <p>Party2</p>
-                       <p>Party3</p>
-                       <p>Party4</p>
-                   </div>
+                        <table>
+                                <tr>
+                                    <th>Political Party</th>
+                                    <th>Logo of party</th>
+                                    <th>Registered Candidates</th>
+                                </tr>
+                                <tr>
+                                    <td>Jogoo Party</td>
+                                    <td></td>
+                                    <td>24</td>
+                                </tr>
+                                    <tr>
+                                        <td>Pamoja Party</td>
+                                        <td></td>
+                                        <td>54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Peoples Party</td>
+                                        <td></td>
+                                        <td>42</td>
+                                    </tr>
+                
+                            </table>
+        
                 </form>
             </div>
         </section>
@@ -90,18 +107,22 @@
                     <table>
                         <tr>
                             <th>Political Office</th>
-                            <th>Candidates</th>
+                            <th>Name of candidate</th>
+                            <th>Political party</th>
                         </tr>
                         <tr>
                             <td>Governor</td>
-                            <td>Candidate1</td>
+                            <td>Hassan Joho</td>
+                            <td>O.D.M</td>
                             <tr>
                                 <td></td>
-                                <td>Candidate2</td>
+                                <td>njaguara ali</td>
+                                <td>P.N.U</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Candidate3</td>
+                                <td>Abdul hussein</td>
+                                <td>KANU</td>
                             </tr>
                         </tr>
                     </table>
