@@ -4,36 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
-    <title>Sign up page</title>
+    <title>Candidate Page</title>
 </head>
 
-<body onclick="openPage('candidateapply',this)">
-    <button id="candidateinterest" class="button-btn pink" onclick="openPage('candidateapply',this)"><b>Apply to be a
-            candidate</b></button>
+<body>
+    <div>
+        <button id="candidateinterest" class="button btn-blue" onclick="openPage('candidateapply',this)"><b>Apply for candidacy</b></button>
+        <button class="button btn-blue" onclick="openPage('petitions',this)"><b>Make Petition</b></button>
+    </div>
+
     <section class="container" id="candidateapply">
         <div class="record_form">
-            <p class="getin">Please Fill in all the details</p>
+            <p class="getin">Please fill in all the details</p>
             <form class="flag_form">
                 <div>
-                    <label for="names"><b>Full Name:</b></label>
-                    <input type="text" placeholder="Enter your full name" name="names" required>
+                    <label for="names"><b>Full Name:</b></label><br>
+                    <input type="text" placeholder="Enter your full name" name="names" required><br>
                 </div>
                 <div>
-                    <label for="position"><b>Apply Position:</b></label>
-                    <input type="text" placeholder="Enter name of position you want to apply for" name="position"
-                        required>
+                    <label for="position"><b>Position:</b></label><br>
+                    <input type="text" placeholder="Enter position" name="position" required><br>
                 </div>
                 <div>
-                    <label for="yearsnumber"><b>Age:</b></label>
-                    <input type="text" placeholder="Enter your age in numbers" name="yearsnumber" required>
+                    <label for="yearsnumber"><b>Age:</b></label><br>
+                    <input type="text" placeholder="Enter your age in numbers" name="yearsnumber" required><br>
+                </div>
+                <div></div><br>
+                <button type="submit" class="signupbtn">Apply</button>
+        </div>
+        </div>
+        </form>
+        </div>
+    </section>
+    <section class="container" id="petitions">
+        <div class="record_form">
+            <p class="getin">Please fill in all the details</p>
+            <form class="flag_form">
+                <div>
+                    <label for="office"><b>Political Office:</b></label><br>
+                    <input type="text" placeholder="Enter your political office" name="office" required><br>
                 </div>
                 <div>
-                    <button type="submit" class="applybtn">Apply</button>
+                    <label for="party"><b>Position:</b></label><br>
+                    <input type="text" placeholder="Enter your party" name="party" required><br>
                 </div>
                 <div>
-                    <button class="button btn-pink">Apply to be a candidate</button>
+                    <label for="name"><b>Fullname:</b></label><br>
+                    <input type="text" placeholder="Enter your name" name="name" required><br>
                 </div>
-            </form>
+                <div>
+                    <label for="complaint"><b>Make Petition:</b></label><br>
+                    <input type="text" placeholder="Enter your petition" name="complaint" required><br>
+                </div>
+                <button type="submit" class="signupbtn">Submit</button>
+                </form>
         </div>
     </section>
     <script src="js/scripts.js"></script>
